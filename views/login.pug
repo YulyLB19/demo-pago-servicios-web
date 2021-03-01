@@ -1,0 +1,17 @@
+extends layout 
+
+block layout-content 
+  div.View.WelcomeView
+    div.Message
+      div.Title
+        h3 Banca por internet
+      div.username
+        input(type="text" placeholder="username")
+      div.password
+        input(type="password" placeholder="password")
+      div.checkbox
+        input(type='checkbox' name='agreement' checked)
+        |Remember me
+      div.NavButtons
+        a(href="/menu")
+            div.NavButton Login
